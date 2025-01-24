@@ -4,7 +4,7 @@ from pathlib import Path
 
 def recursive_directory_mapping(directory_path, space_num = 0):
     for path in directory_path.iterdir():
-        if path.is_file:
+        if path.is_file():
             print(Fore.BLUE, " " * space_num, path)
         else:
             print(Fore.GREEN, " " * space_num, path)
